@@ -1,0 +1,75 @@
+/* 全体の基本設定 */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #fff8e7; /* 温かみのあるクリーム色の背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* アプリのカード枠 */
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px; /* 角を丸くする */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* ほんのり影をつける */
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  color: #ff6f00; /* 美味しそうなオレンジ色 */
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* 結果表示エリア */
+.result-box {
+  background-color: #fff0f5;
+  border: 2px dashed #ffb6c1; /* かわいい点線の枠 */
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#result {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* ボタンのデザイン */
+#omikuji-btn {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px; /* 丸みのあるボタン */
+  cursor: pointer; /* マウスをのせた時に指マークにする */
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+/* ボタンにマウスを乗せたとき・押したときの動き */
+#omikuji-btn:hover {
+  background-color: #e66000;
+}
+
+#omikuji-btn:active {
+  transform: scale(0.95); /* 押したときに少し凹むアニメーション */
+}
